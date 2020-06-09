@@ -26,10 +26,10 @@ jobs:
     - name: installing node
       run: actions/setup-node@v2-beta
       with: 
-        node-version: 14.4.0 
+        node-version: 12
     # Runs a set of commands using the runners shell
     - name: Installing Surge
       run: npm install --global surge
     - name: deploying using surge 
-      run: surge ./ usman-practices.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: surge ./ usman-practices.surge.sh --token $ {{ secrets.SURGE_TOKEN }}
         
